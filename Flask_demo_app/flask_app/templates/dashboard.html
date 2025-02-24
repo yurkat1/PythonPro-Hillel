@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+<h1>Welcome to the dashboard</h1>
+<h4> Number of registered users: {{ user_count }} </h4>
+<a href = "{{ url_for("app.register") }}">Register</a><br>
+<a href = "{{ url_for("app.login") }}">Login</a>
+</body>
+</html>
