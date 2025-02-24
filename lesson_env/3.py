@@ -2,30 +2,18 @@ import random
 
 class Car:
     def __init__(self, trip_distance, model, color, fuel = random.randrange(0, 9)):
-        self.fuel = fuel
-        self.trip_distance = trip_distance
+        self.fuel = random.randrange(0, 9)
+        self.trip_distance = 0
         self.model = model
         self.color = color
 
     def move(self, distance):
-        self.distance = distance
-
-    # @property
-    # def trip_distance(self):
-    #     return self.trip_distance
-    #
-    # @trip_distance.setter
-    # def trip_distance(self, move(random.randrange(0, 9))):
-    def start_race(self):
-        race_dist = 5000  #место назначения гонки
-        desired_dist =  #желаемый пункт назначения
+        self.trip_distance += distance  # додаємо відстань до пробігу
+        self.fuel -= distance
 
 
     def show_info(self):
         return f"Fuel - {self.fuel}, Trip_distance - {self.trip_distance}, model - {self.model}, color - {self.color}"
-#
-# while race_dist < desired_dist:
-#     move(distance = random.randrange(0, 9))
 
 
 car1 = Car("3300", "BMW", "Black")
